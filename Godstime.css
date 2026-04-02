@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    line-height: 1.6;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: #111;
+    color: white;
+    align-items: center;
+}
+nav a{
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+#darkToggle{
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.hero{
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+}
+button{
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.features{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+.box{
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.testimonials{
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+.testimonial-box{
+    margin: 15px auto;
+    max-width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.form-section{
+    text-align: center;
+    padding: 50px 20px;
+}
+form{
+    max-width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin: 10px 0;
+    padding: 10px;
+}
+.cta{
+    text-align: center;
+    padding: 60px 20px;
+    background: #4facfe;
+    color: white;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: green;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.slide{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+.slide.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+.dark{
+    background: #111;
+    color: white;
+}
+.dark header,
+.dark footer{
+    background: #222;
+}
+.dark .box,
+.dark .testimonial-box{
+    background: #222;
+    color: white;
+}
+@media (max-width: 768px){
+    .features{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .box{
+        width: 100%;
+    }
+    header{
+        flex-direction: column;
+        text-align: center;
+    }
+}
